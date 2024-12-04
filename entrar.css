@@ -4,7 +4,7 @@
   font-family: Arial;
 }
 
-/* Links inside the navbar */
+
 .navbar a {
   float: left;
   font-size: 16px;
@@ -28,12 +28,15 @@
   color: white;
   padding: 14px 16px;
   background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
+  font-family: inherit;
+  /* Important for vertical align on mobile phones */
+  margin: 0;
+  /* Important for vertical align on mobile phones */
 }
 
 /* Add a red background color to navbar links on hover */
-.navbar a:hover, .dropdown:hover .dropbtn {
+.navbar a:hover,
+.dropdown:hover .dropbtn {
   background-color: red;
 }
 
@@ -43,7 +46,7 @@
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -74,7 +77,9 @@
   align-items: start;
   background-color: #1a803c;
 }
-.styled-input, textarea {
+
+.styled-input,
+textarea {
   margin-top: 4px;
   border-radius: 4px;
   border: solid 1px gray;
@@ -96,4 +101,66 @@
   background-color: rgb(77, 221, 77);
   border: none;
   border-radius: 4px;
+}
+
+#login-area {
+  width: 350px;
+  /* Adjust width as needed */
+  margin: 100px auto;
+  /* Center horizontally, add top margin */
+  padding: 30px;
+  /* Padding around content */
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  /* Rounded corners */
+  background-color: #f9f9f9;
+  /* Light background */
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  /* Subtle shadow */
+  text-align: center;
+  /* Center text within the form */
+}
+
+#login-area h2 {
+  margin-bottom: 20px;
+  /* Space between title and fields */
+  color: #333;
+  /* Darker title color */
+}
+
+#login-area label {
+  display: block;
+  /* Labels on separate lines */
+  margin-bottom: 5px;
+  font-weight: bold;
+  /* Make labels bolder */
+}
+
+#login-area input[type="email"],
+#login-area input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  /* Rounded corners */
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+
+#login-area input[type="submit"] {
+  background-color: #4CAF50;
+  /* Green button */
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  /* Rounded corners */
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  /* Smooth hover effect */
+}
+
+#login-area input[type="submit"]:hover {
+  background-color: #45a049;
+  /* Darker green on hover */
 }
